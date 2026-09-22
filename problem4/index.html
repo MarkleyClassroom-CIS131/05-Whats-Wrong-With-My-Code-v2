@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4</title>
+    <!-- 
+Problem: Clicking a button should show only images in that category,
+or show all when "All" is clicked.
+-->
+
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: .4rem;
+            margin: .25rem;
+            display: inline-block
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Problem 4</h1>
+    <div>
+        <button onclick="filterBy('all')">All</button>
+        <button onclick="filterBy('poster')">Posters</button>
+        <button onclick="filterBy('family')">Family</button>
+        <button onclick="filterBy('play')">Play</button>
+    </div>
+
+    <div class="card poster">
+        <img src="imgs/movie.jpg" alt="Movie poster">
+    </div>
+    <div class="card family">
+        <img src="imgs/ohana.webp" alt="Ohana means family">
+    </div>
+    <div class="card play">
+        <img src="imgs/stitch_hose.webp" alt="Playing around">
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

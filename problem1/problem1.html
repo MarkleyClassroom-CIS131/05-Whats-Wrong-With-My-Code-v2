@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1</title>
+    <!-- 
+Problem: When the "Update" button is clicked,
+the <h2> should change to "Aloha, DOM!" and 
+all <p> elements should get the yellow highlight background.
+Bug: There is exactly one error in the script preventing this from working.
+-->
+
+    <style>
+        .highlight {
+            background: #fff3cd
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Problem 1</h1>
+    <h2 id="title">Welcome</h2>
+    <p>First paragraph.</p>
+    <p>Another paragraph.</p>
+    <button onclick="updateDom()">Update</button>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
